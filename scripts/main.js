@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const clothes = ['clothes1.png', 'clothes2.png', 'clothes3.png', 'clothes4.png', 'clothes5.png'];
     const mouths = ['mouth1.png', 'mouth2.png', 'mouth3.png', 'mouth4.png', 'mouth5.png'];
     const attributes = ['attribute1.png', 'attribute2.png', 'attribute3.png', 'attribute4.png', 'attribute5.png'];
-    const accessories = ['accessory1.png', 'accessory2.png', 'accessory3.png', 'accessory4.png', 'accessory5.png'];
+    const accessories = ['accessory1.jpg', 'accessory2.jpg', 'accessory3.jpg', 'accessory4.jpg', 'accessory5.jpg'];
 
     const baseImageSrc = 'assets/lilo.jpg'; //path to lilo
     const previewCanvas = document.getElementById('avatar-preview');

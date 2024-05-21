@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avatar Creator</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Create Avatar</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Lilo</h1>
+        <div class="title-section">
+            <h2>Lilo</h2>
+        </div>
+        <div class="preview-section">
+            <canvas id="avatar-preview" width="500" height="500"></canvas>
+        </div>
+        <div class="section" id="background-section">
+            <h2>Select a Background</h2>
+            <div class="options" id="background-options"></div>
+        </div>
+        <div class="section" id="hat-section">
+            <h2>Select a Hat</h2>
+            <div class="options" id="hat-options"></div>
+        </div>
+        <div class="section" id="clothes-section">
+            <h2>Select Clothes</h2>
+            <div class="options" id="clothes-options"></div>
+        </div>
+        <div class="section" id="mouth-section">
+            <h2>Select a Mouth</h2>
+            <div class="options" id="mouth-options"></div>
+        </div>
+        <div class="section" id="attributes-section">
+            <h2>Select an Attribute</h2>
+            <div class="options" id="attributes-options"></div>
+        </div>
+        <div class="section" id="accessories-section">
+            <h2>Select Accessories</h2>
+            <div class="options" id="accessories-options"></div>
+        </div>
+        <button id="download-avatar">Download Your Avatar</button>
+    </div>
+    <canvas id="avatar-canvas" style="display: none;"></canvas>
+    <div id="loading-spinner" class="loading-spinner" style="display: none;"></div>
+    <script src="scripts/main.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js').then(registration => {
+                console.log('Service Worker registered with scope:', registration.scope);
+            }).catch(error => {
+                console.log('Service Worker registration failed:', error);
+            });
+        }
+    </script>
+</body>
+</html>
+

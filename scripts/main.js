@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const backgrounds = ['background1.png', 'background2.png', 'background3.png', 'background4.png', 'background5.png'];
-    const hats = ['hat1.png', 'hat2.png', 'hat3.png', 'hat4.png', 'hat5.png'];
+    const hats = ['bonnet.jpg', 'cowboy hat.jpg', 'tophat.jpg', 'rainbowbbhat.jpg', 'luckyhat.jpg'];
     const clothes = ['clothes1.png', 'clothes2.png', 'clothes3.png', 'clothes4.png', 'clothes5.png'];
     const mouths = ['mouth1.png', 'mouth2.png', 'mouth3.png', 'mouth4.png', 'mouth5.png'];
     const attributes = ['attribute1.png', 'attribute2.png', 'attribute3.png', 'attribute4.png', 'attribute5.png'];
